@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela CID com Sinônimos - Dra. Beatriz Cordeiro de Godoy Miranda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Tabela CID com Sinônimos</h1>
+            <div class="doctor-info">
+                <img src="medi1.jpeg" alt="Dra. Beatriz Cordeiro de Godoy Miranda" class="doctor-photo">
+                
+                <div class="doctor-details">
+                    <h2>Dra. Beatriz Godoy</h2>
+                    <p>Centro De Saúde Padre Cícero -  2719800</p>
+                    <P>CRM: 11088</P>
+                    
+                </div>
+                
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Buscar CID ou Sinônimos...">
+                <button type="button" onclick="searchCID()">Buscar</button>
+            </div>
+            <div id="results" class="results"></div>
+        </main>
+    </div>
+    <div class="watermark">Created By: LAUAN MARSS</div>
+    
+    
+    
+    <div class="notification" id="lunchNotification">
+        <p>Oiiee, Beatriz!</p>
+        <button onclick="closeNotification()">Fechar</button>
+    </div>
+    
+    <script src="scripts.js"></script>
+    
+    
+    <style>
+        
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #5b33a5;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .notification p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .notification button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        </style>
+
+        
+        <script>// Função para fechar a notificação
+            function closeNotification() {
+                document.getElementById('lunchNotification').style.display = 'none';
+            }
+          // Função para exibir a notificação na tela
+function showNotification() {
+    // Cria o elemento da notificação
+    const notification = document.createElement('div');
+    notification.className = 'notification';
+    notification.innerHTML = `
+        <p>OIIEE</p>
+        <button onclick="dismissNotification()">OK</button>
+    `;
+
+    // Adiciona a notificação ao corpo do documento
+    document.body.appendChild(notification);
+
+    // Adiciona o número na aba do navegador
+    document.title = "(1) Nova Notificação";
+
+    // Inicia o efeito de piscar a aba
+    blinkTitle();
+}
+
+// Função para remover a notificação e parar o piscar
+function dismissNotification() {
+    const notification = document.querySelector('.notification');
+    if (notification) {
+        notification.remove();
+    }
+    document.title = originalTitle; // Retorna o título original da aba
+    clearInterval(blinkInterval); // Para o efeito de piscar
+}
+
+// Efeito de piscar a aba
+let blinkInterval;
+let originalTitle = document.title;
+function blinkTitle() {
+    let blink = false;
+    blinkInterval = setInterval(() => {
+        document.title = blink ? "(1) Nova Notificação" : originalTitle;
+        blink = !blink;
+    }, 1000); // Intervalo de 1 segundo para o piscar
+}
+
+// Função para verificar a hora e exibir a notificação
+function checkTime() {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+
+    if ((hours === 23 && minutes === 55) || (hours === 23 && minutes === 15)) {
+        showNotification();
+    }
+}
+
+// Verifica a hora a cada minuto
+setInterval(checkTime, 60000);
+            </script>
+</body>
+</html>

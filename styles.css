@@ -1,0 +1,200 @@
+@keyframes colorChange {
+    0% { background: #ff7e5f; }
+    6.67% { background: #feb47b; }
+    13.34% { background: #ff6b6b; }
+    20.01% { background: #f7b733; }
+    26.68% { background: #fc4a1a; }
+    33.35% { background: #ee0979; }
+    40.02% { background: #ff6a00; }
+    46.69% { background: #ff8c00; }
+    53.36% { background: #e100ff; }
+    60.03% { background: #ff4e50; }
+    66.70% { background: #f9d423; }
+    73.37% { background: #24c6dc; }
+    80.04% { background: #ff512f; }
+    86.71% { background: #dd2476; }
+    93.38% { background: #ff6f69; }
+    100% { background: #ff7e5f; }
+
+    0% { background: #a1c4fd; }
+    6.67% { background: #c2e9fb; }
+    13.34% { background: #fbc2eb; }
+    20.01% { background: #a18cd1; }
+    26.68% { background: #fbc2eb; }
+    33.35% { background: #f7797d; }
+    40.02% { background: #84fab0; }
+    46.69% { background: #8fd3f4; }
+    53.36% { background: #fbd786; }
+    60.03% { background: #f3e7e9; }
+    66.70% { background: #c471ed; }
+    73.37% { background: #f3e7e9; }
+    80.04% { background: #12c2e9; }
+    86.71% { background: #c471ed; }
+    93.38% { background: #f64f59; }
+    100% { background: #a1c4fd; }
+    14.28% { background-color: #33FF57; }
+    28.56% { background-color: #3357FF; }
+    42.84% { background-color: #FF33A1; }
+    57.12% { background-color: #FFD700; }
+    71.40% { background-color: #FF6347; }
+    85.68% { background-color: #6A5ACD; }
+}
+
+
+@keyframes resultColorChange {
+    0% { background: #1a0ec0; }
+    6.67% { background: #967302; }
+    13.34% { background: #2f9175; }
+    20.01% { background: #549c9c; }
+    26.68% { background: #74b9ff; }
+    33.35% { background: #a29bfe; }
+    40.02% { background: #406777; }
+    46.69% { background: #77918c; }
+    53.36% { background: #ff7675; }
+    60.03% { background: #fd79a8; }
+    66.70% { background: #7ecc00; }
+    73.37% { background: #a50016; }
+    80.04% { background: #015840; }
+    86.71% { background: #4e5050; }
+    93.38% { background: #5c4f96; }
+    100% { background: #457901c2; }
+}
+@keyframes imageChange {
+    0% { content: url('medi1.jpeg'); }
+    33.33% {content: url('medi1.jpeg'); }
+    66.66% { content: url('medi1.jpeg'); }
+    100% { content: url('medi1.jpeg'); }
+    73.37% { content: url('medi1.jpeg'); }
+    80.04% { content: url('medi1.jpeg'); }
+    53.36% { content: url('medi1.jpeg'); }
+    46.02% { content: url('medi1.jpeg'); }
+    14.28% { content: url('medi1.jpeg'); }
+    28.56% { content: url('medi1.jpeg'); }
+    42.84% { content: url('medi1.jpeg'); }
+    71.40% { content: url('medi1.jpeg'); }
+}
+
+    
+.doctor-photo {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    animation: imageChange 180s linear infinite; /*  minutos por ciclo */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    animation: colorChange 180s linear infinite;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+}
+
+.doctor-info {
+    display: flex;
+    align-items: center;
+}
+***/aqui caso queira voltar as confi original da photo*/
+
+
+.doctor-details {
+    text-align: left;
+}
+
+.main-content {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: #622db6;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #ca51baf3;
+}
+
+.results {
+    margin-top: 20px;
+}
+.result-item {
+    padding: 10px;
+    background: rgba(129, 1, 108, 0.753);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    animation: resultColorChange 120s linear infinite;
+}
+
+.result-item:hover .synonym-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.synonym-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #661400;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    transition: visibility 0.2s, opacity 0.2s;
+}
+
+    
+.watermark {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.5;
+    font-size: 12px;
+    color: #fff;
+    z-index: 1000;
+    pointer-events: none; /* Permite que você clique através da marca d'água */
+}
