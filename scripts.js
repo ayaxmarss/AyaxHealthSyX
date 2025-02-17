@@ -2858,10 +2858,17 @@ function searchCID() {
     name: 'Infecção anogenital por vírus do herpes [herpes simples], não especificada',
     synonyms: ['Herpes anogenital não especificado', 'Infecção anogenital por herpes simples sem especificação'],
   },
+        { cid: 'B05',
+         name: 'Sarampo',
+        synonyms: [' Tosse', 'Coriza', 'Olhos inflamados', 'Dor de garganta', 'Febre e irritação na pele com manchas vermelhas'],
+        },
+        
+        { cid:'B01',
+         name:'Varicela [Catapora]',
+         synonyms: ['Bolhas na pele', 'Manchas vermelhas', 'Fadiga', 'Coceira', 'Sarna ou úlceras', 'Mal-estar ou perda de apetite'],
   
   
-  
-  
+        },
   
     ];
   
