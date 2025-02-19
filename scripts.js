@@ -2861,74 +2861,73 @@ function searchCID() {
   
    {
     "cid": "B05.0",
-    "nome": "Sarampo complicado por encefalite",
-    "sinonimos": ["Sarampo com inflamação cerebral", "Encefalite sarampenta", "Complicação neurológica do sarampo"]
+    "name": "Sarampo complicado por encefalite",
+    "synonyms": ["Sarampo com inflamação cerebral", "Encefalite sarampenta", "Complicação neurológica do sarampo"],
   },
   {
     "cid": "B05.1",
-    "nome": "Sarampo complicado por meningite",
-    "sinonimos": ["Sarampo com inflamação das meninges", "Meningite sarampenta", "Sarampo com infecção meníngea"]
+    "name": "Sarampo complicado por meningite",
+    "synonyms": ["Sarampo com inflamação das meninges", "Meningite sarampenta", "Sarampo com infecção meníngea"],
   },
   {
     "cid": "B05.2",
-    "nome": "Sarampo complicado por pneumonia",
-    "sinonimos": ["Pneumonia sarampenta", "Infecção pulmonar pelo sarampo", "Complicação respiratória do sarampo"]
+    "name": "Sarampo complicado por pneumonia",
+    "synonyms": ["Pneumonia sarampenta", "Infecção pulmonar pelo sarampo", "Complicação respiratória do sarampo"],
   },
   {
     "cid": "B05.3",
-    "nome": "Sarampo complicado por otite média",
-    "sinonimos": ["Otite sarampenta", "Infecção no ouvido por sarampo", "Complicação auditiva do sarampo"]
+    "name": "Sarampo complicado por otite média",
+    "synonyms": ["Otite sarampenta", "Infecção no ouvido por sarampo", "Complicação auditiva do sarampo"],
   },
   {
     "cid": "B05.4",
-    "nome": "Sarampo com outras complicações",
-    "sinonimos": ["Sarampo complicado", "Complicações diversas do sarampo"]
+    "name": "Sarampo com outras complicações",
+    "synonyms": ["Sarampo complicado", "Complicações diversas do sarampo"],
   },
   {
     "cid": "B05.8",
-    "nome": "Outros tipos de sarampo especificados",
-    "sinonimos": ["Sarampo atípico", "Sarampo modificado", "Sarampo não clássico"]
+    "name": "Outros tipos de sarampo especificados",
+    "synonyms": ["Sarampo atípico", "Sarampo modificado", "Sarampo não clássico"],
   },
   {
     "cid": "B05.9",
-    "nome": "Sarampo não especificado",
-    "sinonimos": ["Sarampo sem complicações descritas", "Infecção por vírus do sarampo"]
+    "name": "Sarampo não especificado",
+    "synonyms": ["Sarampo sem complicações descritas", "Infecção por vírus do sarampo"],
   },
   {
     "cid": "B01.0",
-    "nome": "Varicela complicada por encefalite",
-    "sinonimos": ["Varicela com inflamação cerebral", "Encefalite varicelosa", "Complicação neurológica da varicela"]
+    "name": "Varicela complicada por encefalite",
+    "synonyms": ["Varicela com inflamação cerebral", "Encefalite varicelosa", "Complicação neurológica da varicela"],
   },
   {
     "cid": "B01.1",
-    "nome": "Varicela complicada por meningite",
-    "sinonimos": ["Varicela com inflamação das meninges", "Meningite varicelosa", "Varicela com infecção meníngea"]
+    "name": "Varicela complicada por meningite",
+    "synonyms": ["Varicela com inflamação das meninges", "Meningite varicelosa", "Varicela com infecção meníngea"],
   },
   {
     "cid": "B01.2",
-    "nome": "Varicela complicada por pneumonia",
-    "sinonimos": ["Pneumonia varicelosa", "Infecção pulmonar pela varicela", "Complicação respiratória da varicela"]
+    "name": "Varicela complicada por pneumonia",
+    "synonyms": ["Pneumonia varicelosa", "Infecção pulmonar pela varicela", "Complicação respiratória da varicela"],
   },
   {
     "cid": "B01.8",
-    "nome": "Varicela com outras complicações",
-    "sinonimos": ["Varicela complicada", "Complicações diversas da varicela"]
+    "name": "Varicela com outras complicações",
+    "synonyms": ["Varicela complicada", "Complicações diversas da varicela"],
   },
   {
     "cid": "B01.9",
-    "nome": "Varicela não especificada",
-    "sinonimos": ["Varicela sem complicações descritas", "Infecção por vírus da varicela"]
+    "name": "Varicela não especificada",
+    "synonyms": ["Varicela sem complicações descritas", "Infecção por vírus da varicela"],
   },
     {
   "cid": "Z76.5",
-  "nome": "Pessoa fingindo ser doente (simulação consciente)",
-  "sinonimos": [
+  "name": "Pessoa fingindo ser doente (simulação consciente)",
+  "synonyms": [
     "Simulação de doença",
     "Fingimento de enfermidade",
     "Falsificação de sintomas",
     "Doença fictícia",
-    "Transtorno factício"
-  ]
+    "Transtorno factício" ],
 },
   
     ];
