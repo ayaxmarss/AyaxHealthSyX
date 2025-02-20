@@ -2929,7 +2929,7 @@ function searchCID() {
     'Doença fictícia',
     'Transtorno factício' ],
 },
-   { cid: 'W82', name: 'Condição relacionada ao término da gestação', synonyms: ['condição relacionada ao término da gestação'], },
+   
      
     ];
   
