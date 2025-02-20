@@ -2947,7 +2947,7 @@ function searchCID() {
         { CID: 'Z37.1', NAME: 'Nascimento único, morto', SYNONYMS: ['nascimento único, morto'], }, 
         { CID: 'Z37.2', NAME: 'Nascimentos múltiplos, todos vivos', SYNONYMS: ['nascimentos múltiplos, todos vivos'], },
         { CID: 'Z38', NAME: 'Nascido no hospital', SYNONYMS: ['nascido no hospital'], },
-        { CID: 'Z39', NAME: 'Cuidados pós-parto', SYNONYMS: ['cuidados pós-parto'], } 
+        { CID: 'Z39', NAME: 'Cuidados pós-parto', SYNONYMS: ['cuidados pós-parto'], }, 
   
     ];
   
